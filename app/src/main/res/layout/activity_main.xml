@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="396dp"
+        android:layout_height="169dp"
+        app:srcCompat="@drawable/madlibs" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="396dp"
+        android:layout_height="136dp"
+        android:text="“Mad Libs” are short stories that have blanks called placeholders to be filled in.Once all placeholders are filled in, it shows them the resulting silly story. Select one of the following stories:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        app:columnCount="2">
+
+        <Button
+            android:id="@+id/start1"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="simple"
+            android:text="simple"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="416dp" />
+
+        <Button
+            android:id="@+id/start3"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="tarzan"
+            android:text="tarzan"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="416dp" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp">
+
+        <Button
+            android:id="@+id/start2"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="university"
+            android:text="university"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="416dp" />
+
+        <Button
+            android:id="@+id/start4"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="clothes"
+            android:text="clothes"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="416dp" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/start5"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="dance"
+        android:text="dance"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+</LinearLayout>
